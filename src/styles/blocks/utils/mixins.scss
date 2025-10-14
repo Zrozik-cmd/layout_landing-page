@@ -1,0 +1,123 @@
+// #region breakpoints
+@mixin on-tablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+// #endregion
+
+
+// #region mixin-header
+@mixin content-background-image {
+  background-image: url(/src/img/bg/header-bg-mobile.png);
+  background-position: right;
+
+  @include on-tablet {
+    background-image: url(/src/img/bg/header-bg-tablet.png);
+    background-position: center;
+  }
+
+  @include on-desktop {
+    background-image: url(/src/img/bg/header-bg-desktop.png);
+    background-position: center;
+  }
+}
+
+@mixin content-padding-inline {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 72px;
+  }
+
+  @include on-desktop {
+    padding-inline: 120px;
+  }
+}
+
+@mixin content-padding-block {
+  padding-block: 24px;
+
+  @include on-tablet {
+    padding-block: 36px;
+  }
+}
+
+@mixin content-padding-bottom-header {
+  padding-bottom: 88px;
+
+  @include on-tablet {
+    padding-bottom: 130px;
+  }
+
+  @include on-desktop {
+    padding-bottom: 203px;
+  }
+}
+
+@mixin content-font-size-header {
+  font-size: 36px;
+
+  @include on-tablet {
+    font-size: 64px;
+  }
+
+  @include on-desktop {
+    font-size: 80px;
+  }
+}
+
+// #endregion
+
+
+// #region mixin-menu
+@mixin content-margin-bottom-menu {
+  margin-bottom: 24px;
+
+  @include on-tablet {
+    margin-bottom: 8px;
+  }
+
+  @include on-desktop {
+    margin-bottom: 24px;
+  }
+}
+
+// #endregion
+
+
+// #region mixin-move
+@mixin content-padding-menu {
+  padding: 60px 20px 92px;
+
+  @include on-tablet {
+    padding: 120px 72px 132px;
+  }
+
+  @include on-desktop {
+    padding: 120px 120px 164px;
+  }
+}
+
+@mixin content-display-menu {
+  flex-direction: column;
+  gap: 32px;
+
+  @include on-tablet {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  @include on-desktop {
+    justify-content: space-around;
+  }
+}
+
+// #endregion

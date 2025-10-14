@@ -1,0 +1,30 @@
+.move {
+  display: flex;
+
+  @include content-display-menu;
+
+  justify-content: space-between;
+
+  @include on-desktop {
+    justify-content: start;
+  }
+
+  @include content-padding-menu;
+
+  &__content {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @include on-tablet {
+      width: 288px;
+      height: 192px;
+    }
+
+    @include on-desktop {
+      width: 498px;
+      height: 96px;
+    }
+  }
+}
