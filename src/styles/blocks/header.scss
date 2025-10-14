@@ -22,7 +22,9 @@
   }
 
   &__bottom {
+
     @include content-padding-bottom-header;
+
     @include content-padding-block;
   }
 }
