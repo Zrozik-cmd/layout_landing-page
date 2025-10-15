@@ -1,19 +1,5 @@
 .move {
-  --coloms: 2;
-
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat(var(--coloms), 1fr);
-
-  @include on-tablet {
-    --coloms: 6;
-
-    column-gap: 24px;
-  }
-
-  @include on-desktop {
-    --coloms: 12;
-  }
+  @include page-grid;
 
   &__title {
     grid-column: 1 / -1;
@@ -23,7 +9,7 @@
     }
 
     @include on-desktop {
-      grid-column: span 5;
+      grid-column: 1 / 6;
     }
   }
 
@@ -31,6 +17,14 @@
     display: grid;
     row-gap: 32px;
     margin-block: 60px 92px;
+
+    @include on-tablet {
+      margin-block: 120px 132px;
+    }
+
+    @include on-desktop {
+      margin-block: 120px 164px;
+    }
 
   }
 
@@ -47,7 +41,7 @@
     }
 
     @include on-desktop {
-      grid-column: span 5;
+      grid-column: 6 / -2;
     }
   }
 }
