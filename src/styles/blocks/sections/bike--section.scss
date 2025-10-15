@@ -1,4 +1,7 @@
 .bikes {
+  display: grid;
+  row-gap: 56px;
+
   &__products {
     display: grid;
     row-gap: 40px;

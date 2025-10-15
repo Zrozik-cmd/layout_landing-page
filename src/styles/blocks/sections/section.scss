@@ -9,12 +9,10 @@
 
     @include on-tablet {
       font-size: 48px;
-      padding-right: 53px;
     }
 
     @include on-desktop {
       font-size: 64px;
-      padding-right: 96px;
     }
 
     &--align-left {
