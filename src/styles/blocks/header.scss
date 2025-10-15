@@ -1,14 +1,16 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   @include content-background-image;
 
   background-size: cover;
   background-repeat: no-repeat;
-  box-sizing: border-box;
-  height: 100vh;
+
+  &__content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__title {
     margin: 0;
@@ -22,9 +24,6 @@
   }
 
   &__bottom {
-
     @include content-padding-bottom-header;
-
-    @include content-padding-block;
   }
 }

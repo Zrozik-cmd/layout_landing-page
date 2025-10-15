@@ -38,8 +38,14 @@
   }
 
   @include on-desktop {
+    max-width: 1020px;
+    margin-inline: auto;
     padding-inline: 120px;
   }
+}
+
+.container {
+  @include content-padding-inline;
 }
 
 @mixin content-padding-block {
@@ -95,14 +101,14 @@
 
 // #region mixin-move
 @mixin content-padding-menu {
-  padding: 60px 20px 92px;
+  padding-block: 60px 92px;
 
   @include on-tablet {
-    padding: 120px 72px 132px;
+    padding-block: 120px 132px;
   }
 
   @include on-desktop {
-    padding: 120px 120px 164px;
+    padding-block: 120px  164px;
   }
 }
 

@@ -1,6 +1,5 @@
 .top-bar {
   @include content-padding-block;
-  @include content-padding-inline;
 
   display: flex;
   justify-content: space-between;

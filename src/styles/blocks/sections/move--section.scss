@@ -5,7 +5,7 @@
 
   justify-content: space-between;
 
-  @include on-desktop {
+  @include on-tablet {
     justify-content: start;
   }
 
@@ -18,13 +18,13 @@
     line-height: 140%;
 
     @include on-tablet {
-      width: 288px;
-      height: 192px;
+      max-width: 288px;
+      max-height: 192px;
     }
 
     @include on-desktop {
-      width: 498px;
-      height: 96px;
+      max-width: 498px;
+      max-height: 96px;
     }
   }
 }
