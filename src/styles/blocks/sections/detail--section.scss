@@ -50,10 +50,9 @@
 }
 
 .detail {
-
   &__photos {
-
     @include page-grid;
+
     margin-block: 0 16px;
   }
 
