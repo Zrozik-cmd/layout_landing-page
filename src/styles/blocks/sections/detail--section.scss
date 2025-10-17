@@ -1,6 +1,7 @@
 .details {
   display: grid;
   row-gap: 48px;
+  padding-bottom: 60px;
 
   @include on-tablet {
     row-gap: 64px;
@@ -22,16 +23,26 @@
   &__button {
     @include page-grid;
 
+
+
     &-btn {
       box-sizing: border-box;
-      border-radius: 40px;
       text-align: center;
       width: 100%;
       font-size: 16px;
       font-weight: 700;
       line-height: 27px;
       padding: 14.5px;
-      grid-column: 1 / -1;
+      border-radius: 40px;
+      cursor: unset;
+
+      &-link {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: $text-color-menu;
+        grid-column: 1 / -1;
+
 
       @include on-tablet {
         grid-column: 2 / 6;
@@ -41,12 +52,14 @@
         grid-column: 5 / 9;
       }
 
-      &-link {
-        text-decoration: none;
-        color: $text-color-menu;
+      &:hover {
+        box-shadow: 1px 4px 16px rgba(232, 232, 240, .4);
+      }
       }
     }
   }
+
+
 }
 
 .detail {

@@ -298,17 +298,82 @@
               </article>
 
               <div class="details__button">
-                <button class="details__button-btn ">
-                  <a href="#" class="details__button-btn-link">
+                <a href="#" class="details__button-btn-link">
+                  <button class="details__button-btn">
                     Explore
-                  </a>
-                </button>
+                  </button>
+                </a>
               </div>
             </div>
           </section>
-          <!-- <section class="contacts" id="contacts">
+
+          <section
+            class="contact-us"
+            id="contacts"
+          >
             <h2 class="section-title">Contact us</h2>
-          </section>  -->
+            <div class="contact-us__content">
+              <div class="contact-us__content-form">
+                <form
+                  onsubmit="this.reset(); return false;"
+                  class="contact-us__form"
+                >
+                  <input
+                    required
+                    type="text"
+                    class="contact-us__types"
+                    placeholder="Name"
+                  />
+
+                  <input
+                    required
+                    type="email"
+                    class="contact-us__types"
+                    placeholder="Email"
+                  />
+
+                  <textarea
+                    required
+                    class="contact-us__form-message"
+                    placeholder="Message"
+                    rows="8"
+                  ></textarea>
+                  <button class="contact-us__button button">Send</button>
+                </form>
+              </div>
+
+              <div class="contact-us__info">
+                <a
+                  class="contact-us__link"
+                  href="tel:+1 234 5555-55-55"
+                >
+                  <span class="contact-us__link-title">Phone</span>
+                  <br />
+                  +1 234 5555-55-55
+                  <br />
+                </a>
+                <a class="contact-us__link">
+                  <span class="contact-us__link-title">Email</span>
+                  <br />
+                  hello@miami.com
+                </a>
+                <a
+                  class="contact-us__link"
+                  href="https://www.google.com/maps/place/R.+Leonel+Brizola+-+Santa+Terezinha,+Palotina+-+PR,+85950-000/data=!4m2!3m1!1s0x94f36e5b73babff9:0x83cfb39ba768db19?sa=X&ved=1t:242&ictx=111
+                    "
+                  target="_blank"
+                >
+                  <span class="contact-us__link-title">Address</span>
+                  <br />
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
