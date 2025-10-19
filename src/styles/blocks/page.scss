@@ -8,6 +8,11 @@
   &__body {
   margin: 0;
   background-color: $background-color-main;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
   &__menu {
