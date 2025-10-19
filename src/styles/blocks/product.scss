@@ -4,6 +4,12 @@
   &__photo {
     width: 100%;
     margin-block: 0 32px;
+
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__title {

@@ -41,6 +41,7 @@
   }
 
   &__types {
+    outline: none;
     box-sizing: border-box;
     width: 100%;
     border-radius: 40px;
@@ -51,6 +52,11 @@
     border: none;
   }
 
+  &__label {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
 
 
   &__link {
@@ -59,8 +65,14 @@
     display: block;
     margin-bottom: 24px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &-title {
       font-weight: 400;
+      font-size: 14px;
+      margin: 0;
     }
   }
 
@@ -78,6 +90,7 @@
 }
 
 .contact-us__form-message {
+      outline: none;
       box-sizing: border-box;
       font-family: Poppins, sans-serif;
       width: 100%;

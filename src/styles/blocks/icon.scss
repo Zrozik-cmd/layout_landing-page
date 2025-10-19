@@ -3,10 +3,10 @@
     width: 24px;
     height: 24px;
     background-size: cover;
-    transition: transform 0.7s;
+    transition: transform 0.3s;
 
     &:hover {
-      transform: scale(1.11);
+      transform: scale(1.1);
     }
 
     @include on-tablet {
